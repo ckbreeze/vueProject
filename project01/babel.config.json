@@ -1,6 +1,6 @@
 
 /* ！虽然已经配置好了 Babel ，但并没有让它真正生效。在项目的根目录中创建一个 babel.config.json 文件并启用一些 presets。 */
-//presets  前置配置11111
+//presets  前置配置11112
 {
     "presets": ["@babel/preset-env"],
     "plugins": [
