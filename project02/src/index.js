@@ -2,8 +2,8 @@
 //引入jquery
 import $ from "jquery";
 import less from './less/style.less';
-import Vue from 'vue';
-import App from './App.vue';
+// import Vue from 'vue';
+// import App from './App.vue';
 // import css from "./css/com.css";
 
 // new Vue({

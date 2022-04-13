@@ -2,7 +2,7 @@
 //require是node中遵循CommonJS规范的模块化解决方案。
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { VueLoaderPlugin } = require('vue-loader');
+//const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
     mode: "development",
     output: {
@@ -24,7 +24,9 @@ module.exports = {
         showErrors: true,
         inject: 'body',
         chunks: ["common", 'index']
-    }), new VueLoaderPlugin()],
+    }), 
+   /*  new VueLoaderPlugin() */
+],
     module: {
         rules: [
             //要注意loader加载器的顺序 style-loader css-loader less-loader
@@ -35,16 +37,16 @@ module.exports = {
             {
                 test: /\.less$/i, use: ["style-loader", "css-loader", "less-loader"],
             },
-            {
+           /*  {
                 // *.vue
                 test: /\.vue$/,
                 loader: 'vue-loader',
-              },
-              {
+            },
+            {
                 // `*.vue` 文件中的 `<style>` 块以及普通的`*.css`
                 test: /\.css$/,
                 use: ['vue-style-loader', 'css-loader']
-              },
+            }, */
         ]
     }
 }
